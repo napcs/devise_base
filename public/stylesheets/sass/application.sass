@@ -1,0 +1,76 @@
+@import text.sass
+@import grid.sass
+
+//Displays a general message box with the specified text color
+=message($text-color, $border-color)
+  display: block
+  width: 460px
+  font-size: 12px
+  font-weight: bold
+  border: 2px solid $border-color
+  color: $text-color
+  background-color: #FFFFE5
+  margin-bottom: 20px
+  padding: 7px
+  
++text
+  
+#banner
+  +grid-container
+  #navigation
+    +grid(12)
+
+#main
+  +grid_container
+      
+#footer
+  +grid_container
+  
+.content
+  +grid(12)
+
+.notice 
+  +message(green, green)
+
+.alert
+  +message(#c00, #c00)
+
+
+//Form styles
+fieldset
+  ol, li 
+    clear: both
+    list-style: none
+    margin: 0 0 10px 0
+
+label
+  display: block
+  width: 150px
+
+.fieldWithErrors
+  padding: 2px
+  background-color: #c00
+  display: table
+
+#error_explanation
+  width: 460px
+  border: 2px solid #c00
+  padding: 7px
+  padding-bottom: 0
+  margin-bottom: 20px
+  background-color: #FFFFE5
+
+#error_explanation h2
+  text-align: left
+  font-weight: bold
+  padding: 5px 5px 5px 15px
+  font-size: 12px
+  margin: -7px
+  margin-bottom: 0px
+  background-color: #c00
+  color: #fff
+
+#error_explanation ul li
+  font-size: 12px
+  list-style: square
+  

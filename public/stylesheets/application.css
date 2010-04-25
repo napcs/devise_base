@@ -1,0 +1,152 @@
+body {
+  font: 13px/1.5 Helvetica, Arial, 'Liberation Sans', FreeSans, sans-serif; }
+
+a {
+  color: black; }
+
+a:visited {
+  color: #666666; }
+
+a:hover {
+  color: white;
+  background-color: black; }
+
+a:focus {
+  outline: 1px dotted invert; }
+
+hr {
+  border-color: #cccccc;
+  border-style: solid;
+  border-width: 1px 0 0;
+  clear: both;
+  height: 0; }
+
+h1 {
+  font-size: 25px; }
+
+h2 {
+  font-size: 23px; }
+
+h3 {
+  font-size: 21px; }
+
+h4 {
+  font-size: 19px; }
+
+h5 {
+  font-size: 17px; }
+
+h6 {
+  font-size: 15px; }
+
+ol {
+  list-style: decimal; }
+
+ul {
+  list-style: square; }
+
+li {
+  margin-left: 30px; }
+
+p,
+dl,
+hr,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+ol,
+ul,
+pre,
+table,
+address,
+fieldset {
+  margin-bottom: 10px; }
+
+#banner {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px; }
+  #banner #navigation {
+    display: inline;
+    float: left;
+    margin-left: 10px;
+    margin-right: 10px;
+    width: 940px; }
+
+#main {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px; }
+
+#footer {
+  margin-left: auto;
+  margin-right: auto;
+  width: 960px; }
+
+.content {
+  display: inline;
+  float: left;
+  margin-left: 10px;
+  margin-right: 10px;
+  width: 940px; }
+
+.notice {
+  display: block;
+  width: 460px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid green;
+  color: green;
+  background-color: #ffffe5;
+  margin-bottom: 20px;
+  padding: 7px; }
+
+.alert {
+  display: block;
+  width: 460px;
+  font-size: 12px;
+  font-weight: bold;
+  border: 2px solid #cc0000;
+  color: #cc0000;
+  background-color: #ffffe5;
+  margin-bottom: 20px;
+  padding: 7px; }
+
+fieldset ol, fieldset li {
+  clear: both;
+  list-style: none;
+  margin: 0 0 10px 0; }
+
+label {
+  display: block;
+  width: 150px; }
+
+.fieldWithErrors {
+  padding: 2px;
+  background-color: #cc0000;
+  display: table; }
+
+#error_explanation {
+  width: 460px;
+  border: 2px solid #cc0000;
+  padding: 7px;
+  padding-bottom: 0;
+  margin-bottom: 20px;
+  background-color: #ffffe5; }
+
+#error_explanation h2 {
+  text-align: left;
+  font-weight: bold;
+  padding: 5px 5px 5px 15px;
+  font-size: 12px;
+  margin: -7px;
+  margin-bottom: 0px;
+  background-color: #cc0000;
+  color: white; }
+
+#error_explanation ul li {
+  font-size: 12px;
+  list-style: square; }

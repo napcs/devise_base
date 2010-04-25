@@ -1,0 +1,6 @@
+.bundle
+.sass-cache
+doc/**/*
+db/*.sqlite3
+log/*.log
+tmp/**/*
