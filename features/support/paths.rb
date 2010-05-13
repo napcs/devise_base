@@ -9,11 +9,24 @@ module NavigationHelpers
     case page_name
     
     when /the home\s?page/
-      '/'
-    when /the sign\s?in page/
-      '/sign_in'
+      root_path
+    when /the\s(redisplayed)?\s*sign\s?in page/
+      new_user_session_path
+    when /the sign\s?up page/
+      new_user_registration_path
+    when /the redisplayed sign\s?up page/
+      user_registration_path
+    when /the edit user page/
+      edit_user_registration_path
+    when /the redisplayed edit user page/
+      user_registration_path
+    when /the resend confirmation instructions page/
+      user_confirmation_path
+    when /the send password instructions page/
+      new_user_password_path       
+    when /the send unlock instructions page/
+      new_user_unlock_path
 
-    
     # Add more mappings here.
     # Here is an example that pulls values out of the Regexp:
     #

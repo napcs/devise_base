@@ -1,10 +1,10 @@
 Example::Application.routes.draw do |map|
-  resource :welcome
+  #resource :welcome
 
-  devise_for :users, :path => :user, :skip => :sessions 
+  devise_for :users, :singular => :user, :path => :user, :skip => :sessions 
   # Override Devise Devise::SessionController routes
-  get     '/sign_in' => 'devise/sessions#new', :as => :new_user_session
-  post    '/sign_in' => 'devise/sessions#create', :as => :user_session
+  get  '/sign_in' => 'devise/sessions#new', :as => :new_user_session
+  post '/sign_in' => 'devise/sessions#create', :as => :user_session
   get  '/sign_out' => 'devise/sessions#destroy', :as => :destroy_user_session
 
   # The priority is based upon order of creation:

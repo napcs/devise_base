@@ -1,6 +1,6 @@
 - @title = 'Resend unlock instructions'
 
-= form_for(resource, :as => resource_name, :url => unlock_path(resource_name)) do |f|
+= form_for(resource, :url => unlock_path(resource_name)) do |f|
   = devise_error_messages!
   %fieldset
     %ol
@@ -8,6 +8,6 @@
         = f.label :email
         = f.text_field :email
 
-  = f.submit "Resend unlock instructions"
+  = f.submit "Resend"
 
 = render :partial => "devise/shared/links"

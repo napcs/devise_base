@@ -1,6 +1,6 @@
-- @title = 'Change your password'
+- @title = 'Update your password'
 
-= form_for(resource, :as => resource_name, :url => password_path(resource_name), :html => { :method => :put }) do |f|
+= form_for(resource, :url => password_path(resource_name), :html => { :method => :put }) do |f|
   = devise_error_messages!
   = f.hidden_field :reset_password_token
   %fieldset
@@ -12,6 +12,6 @@
       = f.label :password_confirmation
       = f.password_field :password_confirmation
 
-  = f.submit "Change my password"
+  = f.submit "Update"
 
 = render :partial => "devise/shared/links"

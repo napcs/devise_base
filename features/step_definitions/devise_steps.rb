@@ -12,7 +12,7 @@ Given /^I confirmed my email address$/ do
   @user.confirm!
 end
 
-Given /^my account was locked$/ do
+Given /^my account is locked$/ do
   @user.lock_access!
 end
 
@@ -28,3 +28,6 @@ Given /^I am an authenticated user$/ do
   And %{I press "Sign in"}
 end
 
+Then /^my account should not be found$/ do
+  User.find_by_email('testing@example.com').should be_nil
+end

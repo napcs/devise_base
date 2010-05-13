@@ -65,10 +65,17 @@ address,
 fieldset {
   margin-bottom: 10px; }
 
+body {
+  background-color: #adceff; }
+
 #banner {
   margin-left: auto;
   margin-right: auto;
-  width: 960px; }
+  width: 960px;
+  height: 75px;
+  background-color: #61a0ff;
+  border: 1px solid black;
+  border-bottom-width: 0px; }
   #banner #navigation {
     display: inline;
     float: left;
@@ -79,12 +86,19 @@ fieldset {
 #main {
   margin-left: auto;
   margin-right: auto;
-  width: 960px; }
+  width: 960px;
+  height: 525px;
+  background-color: white;
+  border: 1px solid black; }
 
 #footer {
   margin-left: auto;
   margin-right: auto;
-  width: 960px; }
+  width: 960px;
+  height: 50px;
+  background-color: #61a0ff;
+  border: 1px solid black;
+  border-top-width: 0px; }
 
 .content {
   display: inline;
