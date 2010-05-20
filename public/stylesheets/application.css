@@ -76,12 +76,8 @@ body {
   background-color: #61a0ff;
   border: 1px solid black;
   border-bottom-width: 0px; }
-  #banner #navigation {
-    display: inline;
-    float: left;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 940px; }
+  #banner #user_nav {
+    float: right; }
 
 #main {
   margin-left: auto;
@@ -138,10 +134,8 @@ label {
   display: block;
   width: 150px; }
 
-.fieldWithErrors {
-  padding: 2px;
-  background-color: #cc0000;
-  display: table; }
+.fieldWithErrors label {
+  color: #cc0000; }
 
 #error_explanation {
   width: 460px;

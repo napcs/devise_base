@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en"} 
   %head
-    %title= "Example App | #{@title}"
+    %title= yield(:title) || "Example App"
     %meta{:http_equiv => "Content-Type", :content=>"text/html; charset=utf-8"}
     %meta{:name=>"keywords", :content=>"example"}
     %meta{:name=>"description", :content=>"A example Rails 3 application with Devise authentication"}
@@ -9,10 +9,19 @@
     = stylesheet_link_tag 'application.css', :media => 'screen, projection'
     = javascript_include_tag :defaults
     = csrf_meta_tag
+    = yield(:head)
   %body
     #banner
       .content
         %h1 Example App
+        #user_nav
+          - if user_signed_in?
+            = link_to "Sign out", destroy_user_session_path 
+          - elsif controller_name != 'sessions'
+            - if devise_mapping.registerable? && controller_name != 'registrations'
+              = link_to "Sign up", new_user_registration_path
+              or
+            = link_to "Sign in", new_user_session_path
     #main
       .content
         %h2= @title
@@ -21,7 +30,7 @@
             = flash[:notice] 
         - if flash[:alert].present?
           .alert
-            = flash[:alert]    
+            = flash[:alert]
         = yield
     #footer
       .content

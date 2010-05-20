@@ -1,5 +1,5 @@
 Feature: Email instructions
-  In order correct issues with my account
+  In order to correct issues with my account
   As a user
   I want to receive instructions via email
  

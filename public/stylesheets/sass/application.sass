@@ -24,9 +24,9 @@ body
   background-color: #61A0FF
   border: 1px solid black
   border-bottom-width: 0px
-  #navigation
-    +grid(12)
-
+  #user_nav
+    float: right
+    
 #main
   +grid_container
   height: 525px
@@ -60,11 +60,10 @@ fieldset
 label
   display: block
   width: 150px
-
+  
 .fieldWithErrors
-  padding: 2px
-  background-color: #c00
-  display: table
+  label
+    color: #c00
 
 #error_explanation
   width: 460px
