@@ -1,7 +1,7 @@
 !!!
 %html{:lang => "en"} 
   %head
-    %title= yield(:title) || "Example App"
+    %title= yield(:title) || "Base App"
     %meta{:http_equiv => "Content-Type", :content=>"text/html; charset=utf-8"}
     %meta{:name=>"keywords", :content=>"example"}
     %meta{:name=>"description", :content=>"A example Rails 3 application with Devise authentication"}
@@ -13,7 +13,7 @@
   %body
     #banner
       .content
-        %h1 Example App
+        %h1 Base App
         #user_nav
           - if user_signed_in?
             = link_to "Sign out", destroy_user_session_path 
@@ -24,7 +24,8 @@
             = link_to "Sign in", new_user_session_path
     #main
       .content
-        %h2= @title
+        - if show_title?
+          %h2 #{yield(:title)}
         - if flash[:notice].present?
           .notice
             = flash[:notice] 

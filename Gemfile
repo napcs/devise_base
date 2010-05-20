@@ -11,15 +11,8 @@ gem 'rails', '3.0.0.beta3'
 # Deploy with Capistrano
 # gem 'capistrano'
 
-# Bundle the extra gems:
-# gem 'bj'
-# gem 'nokogiri', '1.4.1'
-# gem 'sqlite3-ruby', :require => 'sqlite3'
-# gem 'aws-s3', :require => 'aws/s3'
 gem 'haml', '>=3.0.0.beta.3'
 gem 'devise','>= 1.1.rc0'
-
-
 
 # Bundle gems for certain environments:
 #
