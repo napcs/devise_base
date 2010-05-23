@@ -10,7 +10,7 @@ Feature: Email instructions
     When I fill in "user_email" with "johndoe@example.com"
     And I press "Resend"
     Then I should see "instructions about how to confirm your email address"
-    And an email should be sent to "johndoe@example.com" with "Confirm my account" in the body
+    And an email should be sent to "johndoe@example.com" with "Confirm my email" in the body
 
   Scenario: Send password change instructions
     Given I am not authenticated
