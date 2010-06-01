@@ -19,7 +19,7 @@ Devise_Base is only compatible with Rails 3. Checkout Devise_Base project with
   git clone git@github.com:swanjr/devise_base.git
   cd devise_base
 
-If you don't have the bundler gem install it.
+If you don't have the bundler gem, install it.
   
   gem install bundler
 
